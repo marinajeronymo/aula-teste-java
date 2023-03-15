@@ -1,0 +1,34 @@
+package projetoauladesenvolvimentosoftware.aulaUm;
+import java.util.Scanner;
+
+public class AulaDesenvolvimento {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		
+		String nomeCompleto;
+		int idade;
+		double notaUm, notaDois;
+		double media;
+		
+		System.out.println("Escreva o Nome Completo:");
+		nomeCompleto = ler.nextLine();
+		
+		System.out.println("Escreva a sua Idade:");
+		idade = ler.nextInt();
+		
+		System.out.println("Escreva a nota da primeira AV:");
+		notaUm = ler.nextDouble();
+		
+		System.out.println("Escreva a nota da segunda AV:");
+		notaDois = ler.nextDouble();
+		
+		media = (notaUm+notaDois)/2;
+		
+		System.out.println(nomeCompleto + " de "+ idade +" anos teve média = " + media);
+		
+		
+		}
+	}
+
+
